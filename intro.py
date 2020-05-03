@@ -3,11 +3,21 @@ y = 'Jeff'
 x = 'abc'  # you can change x from an int to a string no problem in Python because of dynamic typing.
 # static typing is when you give a type to a variable, like int x = 5. Then x = "abc" would be illegal
 
+
 # visualize indices (remember arrays start at 0)
 #    0  1  2  3
-a = [2, 2, 3, 4]
+a = [2, 2, 3, 4]  # this is a list
+print(a[0])
 
-# def means function
+# the following access the same element in our context
+print(a[3])
+print(a[len(a)-1])  # len() is a built in Python function to get length of an object
+                        # we access last element intelligently (remember arrays start at 0, so 4 is out of bounds)
+print(a[-1])  # Pythonic shorthand for above
+
+
+# def means function, think of math functions, f(x) = x^2
+# f(0) = 0, f(3) = 9, etc.
 def square(x):
     return x*x
 
